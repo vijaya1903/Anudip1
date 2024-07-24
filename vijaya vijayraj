@@ -1,0 +1,13 @@
+public class ReplaceSpaces {
+    public static void main(String[] args) {
+        String sentence = "There are 3 spaces.";
+        String replacedSentence = replaceSpaces(sentence);
+        System.out.println(replacedSentence);
+    }
+    
+    public static String replaceSpaces(String input) {
+        // Using regular expression to replace multiple spaces with a single #
+        String replaced = input.replaceAll("\\s+", "#");
+        return replaced;
+    }
+}
